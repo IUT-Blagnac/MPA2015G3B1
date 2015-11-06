@@ -20,6 +20,15 @@ script:
   - ls -alF
   - cd sprint_5
   - javac -cp .:./bin -d ./bin ./src/HelloMonde.java
+  - javac -cp .:./bin -d ./bin ./src/MakeOPTIweb.java
+  - javac -cp .:./bin -d ./bin ./src/Pages/Accueil.java
+  - javac -cp .:./bin -d ./bin ./src/Pages/Crédits.java
+  - javac -cp .:./bin -d ./bin ./src/Pages/Etudiants.java
+  - javac -cp .:./bin -d ./bin ./src/Pages/Intervenants.java
+  - javac -cp .:./bin -d ./bin ./src/Pages/Page.java
+  - javac -cp .:./bin -d ./bin ./src/Pages/Projets.javac
+  - javac -cp .:./bin -d ./bin ./src/Pages/Sujets.java
+  - javac -cp .:./bin -d ./bin ./src/Util/Lib.java
   - javac -cp .:./bin:../junit.jar -d ./bin ./src/HelloMondeTest.java
   - java -jar ../plantuml.jar -Tpng -o srcdoc/images srcdoc/diag0.puml
   - python ../asciidoc-8.6.7/asciidoc.py -a data-uri -o srcdoc/presentationFinale.html srcdoc/presentationFinale.txt
